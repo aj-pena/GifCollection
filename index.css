@@ -1,0 +1,20 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.container{
+    max-width: 90vw;
+    margin: 0 auto;
+    border: magenta solid 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.reel{
+
+    border: black dotted 1px;
+}

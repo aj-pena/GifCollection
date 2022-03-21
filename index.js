@@ -1,4 +1,4 @@
-
+const container = document.getElementById('container')
 
 let html = ''
 const images = [
@@ -7,14 +7,32 @@ const images = [
     './Assets/Gifs/cooking-gif.gif',
     './Assets/Gifs/brushing.gif',
     './Assets/Gifs/cottage.gif',
-    './Assets/Gifs/facade.gif'
+    './Assets/Gifs/facade.gif',
+    './Assets/Gifs/fireworks.gif',
+    './Assets/Gifs/fuji.gif',
+    './Assets/Gifs/ladywithcat.gif',
+    './Assets/Gifs/Pagoda.gif',
+    './Assets/Gifs/rain.gif',
+    './Assets/Gifs/redFall.gif',
+    './Assets/Gifs/scrolling.gif',
+    './Assets/Gifs/see-japan-seawaves.gif',
+    './Assets/Gifs/singingBird.gif',
+    './Assets/Gifs/snowflakes.gif',
+    './Assets/Gifs/splashing-water.gif',
+    './Assets/Gifs/sppeding-train.gif',
+    './Assets/Gifs/superwave.gif',
+    './Assets/Gifs/tea.gif',
+    './Assets/Gifs/transit.gif',
+    './Assets/Gifs/urbanStreet.gif',
+    './Assets/Gifs/waves.gif',
+    './Assets/Gifs/woodworking.gif'
 
 ]
 
 for(const image of images){
     html += `
-        <img src=${image} alt='#'>
+        <img src=${image} alt='#' class="reel">
     `
 }
 console.log(html)
-document.body.innerHTML = html
+container.innerHTML = html
