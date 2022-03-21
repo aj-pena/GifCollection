@@ -25,8 +25,10 @@ const images = [
     './Assets/Gifs/transit.gif',
     './Assets/Gifs/urbanStreet.gif',
     './Assets/Gifs/waves.gif',
-    './Assets/Gifs/woodworking.gif'
-
+    './Assets/Gifs/woodworking.gif',
+    './Assets/Gifs/breaking-waves.avif',
+    './Assets/Gifs/village.avif',
+    './Assets/Gifs/farmers.avif'
 ]
 
 for(const image of images){
