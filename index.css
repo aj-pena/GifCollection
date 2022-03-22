@@ -110,7 +110,7 @@ h1{
         max-width: 48%
     }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
     body{
         background-size: 425vh;
     }
@@ -121,10 +121,5 @@ h1{
     .reel {
         max-height: 200px;
         width: auto;
-    }
-}
-@media screen and (min-width: 1280px){
-    body{
-        background-size: 425vh;
     }
 }
