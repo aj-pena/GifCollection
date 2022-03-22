@@ -12,7 +12,7 @@ body{
     background-image: url('./Assets/Wallpapers/wp9221933-8-bit-japan-wallpapers.png');
     background-color: goldenrod;
     /* background-blend-mode: overlay; */
-    background-size: cover;
+    background-size:200vh;
 }
 img{
     display: block;
@@ -36,43 +36,62 @@ header{
 /* typography */
 h1{
     margin:0;
-    padding-top: .25em;
-    font-size: 3rem;
+    padding: 1em .5em;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
     text-shadow: 1px 1px 1px #000000;
     text-align: center;
 }
 .container{
-    max-width: 65vw;
+    max-width: 85vw;
     margin: 0 auto;
-    padding: 1em;
+    padding: .5em;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:center;
 }
 .reel{
-    max-height: 100px;
-    width: auto;
-    border: rgba(255,255,255,.7) solid 1px;
+    width: 100%;
 }
 .big{
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 100px;
+    left: 0;
     z-index: 2;
-    min-width: 80vw;
+    width: 100vw;
     min-height:100vh;
     object-fit: cover;
     object-position: center;
 }
-
-@media only screen and (max-width=400px){
+/* media query for larger screens */
+@media screen and (min-width: 600px){
+    body{
+        background-size: cover;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .container{
+        max-width: 65vw;
+        margin: 0 auto;
+        padding: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }    
     .reel{
-        width: 100%;
+        max-height: 100px;
+        width: auto;
+        border: rgba(255,255,255,.7) solid 1px;
     }
     .big{
-        position:absolute;
-        top:0;
+        position: fixed;
+        top: 0;
         left: 0;
-        z-index:2;
+        z-index: 2;
+        height:100vh;
+        object-fit: contain;
     }
+    
 }
