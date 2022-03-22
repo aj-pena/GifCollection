@@ -67,7 +67,7 @@ h1{
 /* media query for larger screens */
 @media screen and (min-width: 600px){   
     body{
-        background-size: 250vh;
+        background-size: 275vh;
     } 
     h1{
         font-size: 2.5rem;
