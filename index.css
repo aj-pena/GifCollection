@@ -96,6 +96,9 @@ h1{
     
 }
 @media screen and (min-width: 900px){
+    body{
+        background-size: 375vh;
+    }
     h1{
         font-size: 3rem;
     }
@@ -107,7 +110,10 @@ h1{
         max-width: 48%
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
+    body{
+        background-size: 425vh;
+    }
     .container{
         max-width: 75vw;
         justify-content: space-between;
@@ -115,5 +121,10 @@ h1{
     .reel {
         max-height: 200px;
         width: auto;
+    }
+}
+@media screen and (min-width: 1280px){
+    body{
+        background-size: 425vh;
     }
 }
