@@ -20,6 +20,10 @@ img{
     margin-bottom: .5em;
     margin-right: .5em;
 }
+img:hover,
+img:focus{
+    box-shadow: 2px 2px 3px white, -2px -2px 3px white, 1px 1px 2px white;
+}
 header{
     min-height: 10vh;
     background: none;
@@ -35,11 +39,10 @@ h1{
     padding-top: .25em;
     font-size: 3rem;
     text-shadow: 1px 1px 1px #000000;
+    text-align: center;
 }
 .container{
     max-width: 65vw;
-    /* background-image: url('./Assets/Images/annie-spratt-xTaOPMa6wAE-unsplash.jpg');
-    background-size: cover; */
     margin: 0 auto;
     padding: 1em;
     display: flex;
@@ -50,4 +53,26 @@ h1{
     max-height: 100px;
     width: auto;
     border: rgba(255,255,255,.7) solid 1px;
+}
+.big{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 2;
+    min-width: 80vw;
+    min-height:100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media only screen and (max-width=400px){
+    .reel{
+        width: 100%;
+    }
+    .big{
+        position:absolute;
+        top:0;
+        left: 0;
+        z-index:2;
+    }
 }

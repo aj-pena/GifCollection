@@ -30,11 +30,25 @@ const images = [
     './Assets/Gifs/village.avif',
     './Assets/Gifs/farmers.avif'
 ]
+getImages(images)
 
-for(const image of images){
-    html += `
-        <img src=${image} alt='#' class="reel">
-    `
+function getImages(arr){
+    for(const item of arr){
+        html += `
+            <img src=${item} alt='#' class="reel">
+        `
+    }
+    container.innerHTML = html
 }
-console.log(html)
-container.innerHTML = html
+function growImage(e){
+    const img = e.target
+    if(img.classList.contains('big')){
+        img.classList.remove('big')
+        img.classList.add('reel')
+    } else{
+        img.classList.add('big')
+        img.classList.remove('reel')
+    }
+}
+// Event listener for clicking on images
+container.addEventListener('click', growImage)
